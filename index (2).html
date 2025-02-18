@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <title>Background del Personaggio</title>
+  <style>
+    body {
+      font-family: 'Cinzel', cursive;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #e1e1e1;
+      text-align: center;
+      margin: 20px;
+      position: relative;
+
+      z-index: 1;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgb(77 26 26 / 80%);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(200, 200, 200, 0.7);
+      border: 5px solid silver;
+      position: relative;
+      animation: fadeInUp 1.5s ease-in-out;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #A9A9A9;
+      text-shadow: 0 0 10px rgba(169, 169, 169, 1);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px rgba(169, 169, 169, 0.6);
+      }
+
+      to {
+        text-shadow: 0 0 15px rgba(169, 169, 169, 1);
+      }
+    }
+
+    .background-text,
+    .mentor-section {
+      margin-top: 20px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards ease-in-out 0.7s;
+      color: #dcdcdc;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 2em;
+      color: #f1c40f;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+      animation: glow 2s infinite alternate;
+    }
+
+    .sparkle {
+      animation: sparkle 1s infinite;
+    }
+
+    @keyframes sparkle {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .section-divider {
+      border-top: 3px solid #b07d3e;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .container:hover {
+      box-shadow: 0 0 25px rgba(169, 169, 169, 1);
+    }
+
+    /* Le rune */
+    .rune {
+      position: absolute;
+      font-size: 3rem;
+      opacity: 0;
+      animation: fadeIn 1s forwards, fadeOut 1s forwards 4s;
+      z-index: -1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="container">
+
+    <body class="medieval-text"
+      style="font-family: 'Cinzel', cursive; background-size: cover; background-attachment: fixed; color: #e1e1e1; text-align: center; margin: 20px; position: relative; background: rgb(77 69 54 / 80%);">
+
+      <h1 style="font-family: 'Uncial Antiqua'">SHALZEN</h1>
+      <img src="https://i.imgur.com/jckmHvO.jpeg" alt="Immagine del personaggio" style="max-width: 50%; height: auto;">
+        <hr style="border: none; height: 2px; background: linear-gradient(90deg, rgba(169, 169, 169, 0) 0%, rgba(169, 169, 169, 1) 50%, rgba(169, 169, 169, 0) 100%); position: relative; margin-top: 30px; margin-bottom: 30px;">
+            <p style="text-align: center; margin-left:15px; margin-right:15px;">Sesso: M | Età: 23 anni | Cittadinanza: Ultima</p>
+<p>
+        Altezza: 188 cm | Peso: 89 kg | Allineamento: NB
+</p>
+        <p>Razza: Tiefling | Servo fedele del Nord</p>
+            <hr style="border: none; height: 2px; background: linear-gradient(90deg, rgba(169, 169, 169, 0) 0%, rgba(169, 169, 169, 1) 50%, rgba(169, 169, 169, 0) 100%); position: relative; margin-top: 30px; margin-bottom: 30px;">
+            <div style="margin-top: 0px; text-align: justify; opacity: 1; color: #dcdcdc;">
+        <h2>Background</h2>
+        <p>Nato sotto la luce fioca delle torce della città di Ultima, Shalzen venne al mondo con la pelle lievemente
+          rossa, corna appuntite e occhi gialli penetranti. Un segno, per i suoi genitori, del sangue abissale che
+          scorreva nelle sue vene. Nella paura e nella vergogna, lo abbandonarono appena nato, lasciandolo in un vicolo
+          freddo, destinato a perire prima ancora di vedere l'alba del giorno successivo.</p>
+        <p>Ma il destino aveva altri piani.</p>
+        <p>Un prete del convento di Khorr, il dio del coraggio, venne attirato nel vicolo da dei lamenti. Lo trovò
+          avvolto solo in stracci lisi, tremante ma ancora vivo. Vedendo nel piccolo Tiefling non un mostro, ma un’anima
+          innocente in cerca di una via, lo portò con sé nel tempio del culto dei sette. Qui, tra le mura sacre, Shalzen
+          crebbe con l'insegnamento della disciplina, della giustizia e dell'autocontrollo.</p>
+        <p>Fin dalla più tenera età, Shalzen si trovò di fronte a sguardi sospettosi e parole sussurrate alle sue
+          spalle. Il suo aspetto era un monito di caos e distruzione, una presenza che molti avrebbero preferito non
+          vedere tra le sacre mura del convento. Gli altri orfani e accoliti lo evitavano, temendo che la sua natura
+          infernale potesse emergere da un momento all'altro. Ma lui rispondeva al pregiudizio con l’unica arma che
+          possedeva: la dedizione assoluta alla fede.</p>
+        <p>Il suo mentore fu proprio il mezzelfo che lo salvò, Saint Fourclover. Un uomo tanto forte spiritualmente
+          quanto fisicamente. Gli insegnò a combattere, a pregare, a perdonare. Con lui Shalzen imparò che la vera forza
+          non stava nei muscoli o nella spada, ma nella volontà di affrontare l’oscurità senza vacillare.</p>
+        <p>Shalzen cresceva con un fuoco interiore che lo divorava: un bisogno incessante di dimostrare il proprio
+          valore, non solo agli altri, ma anche a se stesso. Non bastava pregare, non bastava combattere, non bastava
+          essere un buon accolito. Ogni giorno doveva essere migliore del precedente, ogni ferita, ogni sacrificio era
+          una prova della sua determinazione. Si imponeva allenamenti estenuanti, punizioni auto-inflitte se riteneva di
+          aver fallito un compito o una lezione. Il dolore divenne per lui un compagno costante, una testimonianza del
+          suo impegno incrollabile.</p>
+        <p>Durante l’adolescenza, Shalzen si distinse non solo per la sua incrollabile fede, ma anche per la sua abilità
+          nel combattimento. Affrontava ogni addestramento con un’intensità quasi ossessiva, determinato a dimostrare
+          che la sua discendenza non lo rendeva un mostro, ma un guerriero della giustizia. Tuttavia, il dubbio
+          continuava a tormentarlo: e se il sangue dell’Abisso lo avesse infine corrotto? Se un giorno si fosse
+          svegliato e avesse ceduto all’oscurità dentro di lui?</p>
+        <p>Durante la sua formazione, ebbe diverse esperienze che lo segnarono profondamente. Una notte, durante una
+          ronda insieme ad altri accoliti, si imbatté in un gruppo di banditi intenti a saccheggiare un piccolo mercato
+          ai margini della città. Il suo istinto lo spinse ad affrontarli, ma la sua inesperienza lo tradì: fu
+          facilmente sopraffatto e ferito. Solo l’intervento di Saint Fourclover e degli altri accoliti riuscì a
+          salvarlo. Questo fallimento bruciò più delle ferite stesse, insegnandogli che il coraggio senza preparazione
+          può essere fatale.
+        </p>
+        <p>In un'altra occasione, trovò un giovane ladruncolo, poco più che un bambino, che tentava di rubare del pane
+          dal convento. Gli altri accoliti volevano punirlo severamente, ma Shalzen scelse di ascoltarlo. Scoprì che il
+          ragazzo rubava per sfamare la sorellina malata. Invece di denunciarlo, parlò con Saint e convinse il convento
+          ad aiutarlo. Questo episodio rafforzò la sua convinzione che la giustizia non è sempre bianca o nera, e che la
+          misericordia può essere più potente della spada.</p>
+        <p>Un altro evento significativo fu l’incontro con un vecchio cavaliere decaduto, un tempo un grande eroe, ora
+          ridotto a un vagabondo ubriaco. Shalzen, incuriosito dalla sua storia, passò settimane a parlargli, ascoltando
+          i racconti di battaglie gloriose e cadute rovinose. Questo incontro gli insegnò che anche i più grandi
+          guerrieri possono fallire, e che la vera forza sta nella capacità di rialzarsi.</p>
+        <p>Il giorno della sua maggiore età, Shalzen prese la sua decisione più grande: offrire la sua vita a Khorr,
+          diventandone un paladino. Scelse l’armatura e la spada, non per vendetta, ma per dimostrare al mondo che non è
+          il sangue a definire un uomo, ma le sue scelte. Saint lo guidò in questo percorso, standogli accanto e
+          supportandolo, ma ricordandogli sempre che la fede più difficile da mantenere non era quella negli dei, bensì
+          quella in se stesso.</p>
+        <p>All'età di 23 anni, Shalzen lasciò il convento, armato della sua fede e della sua spada, pronto a sfidare il
+          destino. Ma prima di partire, Saint gli disse una frase che gli sarebbe rimasta impressa nella mente per
+          sempre: "Non si può cambiare il mondo, senza prima cambiare sé stessi."</p>
+
+        <p><strong>Carattere ed Ideali</strong></p>
+
+        <p>Shalzen è un uomo di grande disciplina e pazienza. Le provocazioni non hanno effetto su di lui e
+          difficilmente si sfoga sugli altri, perché crede che tutti meritino un’altra possibilità. A testa alta
+          combatte contro le ingiustizie, aiutando i deboli e gli indifesi, ma non con l’arroganza di chi si crede
+          superiore. Lui non combatte per gloria o per odio, ma per un ideale più grande di lui. Tuttavia, dentro di sé
+          porta una paura silenziosa, un timore che lo consuma nelle notti più buie: e se, nonostante tutto, il sangue
+          infernale dentro di lui prendesse il sopravvento? Se la sua missione fosse solo un’illusione destinata a
+          sgretolarsi?</p>
+        <p>Un’altra questione lo tormenta: i suoi genitori biologici. Nonostante tutto, nel profondo del suo cuore,
+          Shalzen desidera ritrovarli, fargli vedere l’uomo che è diventato, ricevere da loro il perdono e, forse,
+          perdonarli a sua volta. Ma se lo rifiutassero ancora? Se per loro non fosse altro che un errore, un’ombra da
+          dimenticare?</p>
+        <p>Shalzen seppur forte esteriormente, interiormente ha paura di cedere alle tentazioni dell'abisso. Lui fa
+          vedere da parte sua che è diverso, ma è veramente così? Il tiefling ha paura che un giorno cederà, ma non lo
+          farà senza combattere.
+        </p>
+      </div>
+      <hr
+        style="border: none; height: 2px; background: linear-gradient(90deg, rgba(169, 169, 169, 0) 0%, rgba(169, 169, 169, 1) 50%, rgba(169, 169, 169, 0) 100%); position: relative; margin-top: 30px; margin-bottom: 30px;">
+
+      <img class="gif" src="https://i.imgur.com/S05rkOA.gif" alt="GIF del personaggio" width="50%" height="50%">
+      <p
+        style="font-family: 'Uncial Antiqua'; font-style: italic; font-size: 2em; color: #f1c40f; text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);">
+        "Non si può cambiare il mondo, senza prima cambiare sé stessi."
+      </p>
+    </body>
+
+
+
+    <script>
+      // Funzione per aggiungere rune
+      function addRune(runeText) {
+        const rune = document.createElement('div');
+        rune.classList.add('rune');
+        rune.textContent = runeText;
+
+        // Posizionamento solo ai lati
+        const side = Math.random() < 0.5 ? 'left' : 'right';  // Scegliamo casualmente sinistra o destra
+        rune.style[side] = (Math.random() * 12 + 5) + '%';  // Posizione casuale tra il 5% e il 25% della larghezza
+
+        // Posizionamento verticale casuale
+        rune.style.top = Math.random() * 90 + 5 + '%';  // Posizione verticale tra il 0% e l'80%
+
+        document.body.appendChild(rune);
+
+        // Dopo l'animazione di uscita, rimuovi la runa
+        setTimeout(() => {
+          rune.remove();
+        }, 5000); // La runa scomparirà dopo 3 secondi
+      }
+
+      // Funzione per aggiungere rune ciclicamente
+      function startRuneSequence() {
+        const runes = ['ᛋ', 'ᚬ', 'ᚱ', 'ᚩ', 'ᚦ', 'ᛁ', 'ᛃ', 'ᚻ', 'ᛒ', 'ᛃ']; // Esempio di rune
+        let index = 0;
+
+        setInterval(() => {
+          addRune(runes[index]);
+          index = (index + 1) % runes.length;
+        }, 500); // Ogni 2 secondi
+      }
+
+      // Avvia la sequenza delle rune
+      startRuneSequence();
+    </script>
+</body>
+
+</html>
